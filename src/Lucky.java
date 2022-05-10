@@ -4,7 +4,6 @@
 чтобы она выводила правильный результат.
 Убедитесь, что потоки работают параллельно и блокируют друг друга минимально возможное время.
  */
-
 public class Lucky {
     static int x = 0;
     static int count = 0;
@@ -22,7 +21,6 @@ public class Lucky {
                     x++;
                     temp = x;
                 }
-
                 if ((temp % 10) + (temp / 10) % 10 + (temp / 100) % 10 == (temp / 1000)
                         % 10 + (temp / 10000) % 10 + (temp / 100000) % 10) {
                     System.out.println(temp);
@@ -47,3 +45,4 @@ public class Lucky {
         System.out.println("Total: " + count);
     }
 }
+
