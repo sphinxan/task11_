@@ -22,6 +22,7 @@ public class Lucky {
                     x++;
                     temp = x;
                 }
+
                 if ((temp % 10) + (temp / 10) % 10 + (temp / 100) % 10 == (temp / 1000)
                         % 10 + (temp / 10000) % 10 + (temp / 100000) % 10) {
                     System.out.println(temp);
